@@ -3,9 +3,10 @@ project(cpp_examples)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(SOURCES_FILES ScreenShot.hpp)
+set(HEADERS_FILES ScreenShot.hpp)
+set(SOURCES_FILES ScreenShot.cpp)
 
-add_executable(cpp_examples main.cpp ${SOURCES_FILES})
+add_executable(cpp_examples main.cpp ${SOURCES_FILES} ${HEADERS_FILES})
 
 # Add X11
 find_package(X11 REQUIRED)
